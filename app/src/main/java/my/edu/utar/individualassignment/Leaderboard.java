@@ -79,8 +79,8 @@ public class Leaderboard extends AppCompatActivity {
         TextView scoresTextView = findViewById(R.id.RankView);
         String scoresText = "";
 
-        for (int i = 0; i < players.size(); i++) {
-            Player player = players.get(i);
+        for (int i = 0; i < top25.size(); i++) {
+            Player player = top25.get(i);
             scoresText += (i + 1) + ". " + player.getName() + ": " + player.getScore() + "\n";
         }
 
